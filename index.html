@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth hide-scroll-bar">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,16 @@
 </head>
 
 <body>
+    <style>
+        .hide-scroll-bar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
     <!--nav-->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
         <div class="container">
@@ -141,35 +151,8 @@
     </section>
     <!--about end-->
 
-    <!--cv-->
-    <section id="clients" class="pt-36 pb-32 bg-slate-800">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-ijo mb-2">clients</h4>
-                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-                    <p class="font-medium text-md text-secondary md:text-lg">Aku tidak pernah puas dengan apa yang-ku lakukan, dan aku aku sangat haus akan ilmu pengetahuan. </p>
-                </div>
-            </div>
-            <div class="w-full px-4">
-                <div class="flex flex-wrap items-center justify-center">
-                    <a href="https://www.traspac.co.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="public/img/pt/TRASPAC.png" alt="TRASPAC" />
-                    </a>
-                    <a href="https://ilhamnaraya.github.io/webracli.github.io/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="public/img/pt/RAPIER.png" alt="RAPIER" />
-                    </a>
-                    <a href="https://www.lintasarta.net/id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="public/img/pt/Lintasarta.png" alt="Lintasarta" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--cv end-->
-
     <!--Portofolio-->
-    <section id="Portofolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="Portofolio" class="pt-36 pb-32 bg-slate-100">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -210,6 +193,32 @@
     </section>
     <!--Portofolio end-->
 
+    <!--client-->
+    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-ijo mb-2">clients</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Aku tidak pernah puas dengan apa yang-ku lakukan, dan aku aku sangat haus akan ilmu pengetahuan. </p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="https://www.traspac.co.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="public/img/pt/TRASPAC.png" alt="TRASPAC" />
+                    </a>
+                    <a href="https://ilhamnaraya.github.io/webracli.github.io/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="public/img/pt/RAPIER.png" alt="RAPIER" />
+                    </a>
+                    <a href="https://www.lintasarta.net/id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="public/img/pt/Lintasarta.png" alt="Lintasarta" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--client-->
 
     <!--blog-->
     <section id="blog" class="pt-36 pb-32 bg-slate-100">
